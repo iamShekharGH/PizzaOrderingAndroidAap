@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/background_dish_options"
+    android:padding="8dp">
+    <!--    android:background="#F4F9F6">-->
+
+    <ImageView
+        android:id="@+id/rv_item_dish_overview_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#636663"
+        tools:src="@drawable/ic_pizza" />
+
+    <TextView
+        android:id="@+id/rv_item_dish_overview_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/rv_item_dish_overview_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Medium" />
+
+    <TextView
+        android:id="@+id/rv_item_dish_overview_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/rv_item_dish_overview_image"
+        app:layout_constraintTop_toBottomOf="@id/rv_item_dish_overview_heading"
+        tools:text="Serves 2" />
+
+    <TextView
+        android:id="@+id/rv_item_dish_overview_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/background_price"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/rv_item_dish_overview_image"
+        app:layout_constraintTop_toBottomOf="@id/rv_item_dish_overview_heading"
+        tools:text="249" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

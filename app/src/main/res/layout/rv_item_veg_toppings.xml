@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="6dp"
+    app:cardCornerRadius="8dp">
+
+    <ImageView
+        android:id="@+id/dish_overview_veg_toppings_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@drawable/background_language_chooseing"
+        android:cropToPadding="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/placeholder_tipping_item_paneer" />
+</androidx.cardview.widget.CardView>
