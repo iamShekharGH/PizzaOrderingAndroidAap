@@ -13,7 +13,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:padding="16dp"
-                    android:text="LOGIN WIT YOUR VALID MOBILE NUMBER"
+                    android:text="LOGIN WITH YOUR VALID MOBILE NUMBER"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -53,10 +52,10 @@
                     app:prefixTextAppearance="@color/black">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/login_fragment_phoneNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@color/white"
-                        android:hint="Mobile No. *"
                         android:inputType="phone" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,7 +87,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-
                     android:text="LOGIN WITH EXISTING ACCOUNT"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
@@ -131,6 +129,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/login_fragment_skip_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"

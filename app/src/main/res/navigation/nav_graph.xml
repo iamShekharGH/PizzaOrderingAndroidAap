@@ -45,5 +45,14 @@
         android:id="@+id/fragmentMenu"
         android:name="com.iamshekhargh.mypizzaapp.ui.menu.FragmentMenu"
         android:label="fragment_menu"
-        tools:layout="@layout/fragment_menu" />
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_fragmentMenu_to_fragmentDishOverview"
+            app:destination="@id/fragmentDishOverview" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDishOverview"
+        android:name="com.iamshekhargh.mypizzaapp.ui.dish.FragmentDishOverview"
+        android:label="fragment_dish_overview"
+        tools:layout="@layout/fragment_dish_overview" />
 </navigation>

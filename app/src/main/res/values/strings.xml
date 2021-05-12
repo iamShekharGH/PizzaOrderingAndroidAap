@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Pizza App</string>
+    <string name="choose_language">CHOOSE LANGUAGE</string>
 </resources>

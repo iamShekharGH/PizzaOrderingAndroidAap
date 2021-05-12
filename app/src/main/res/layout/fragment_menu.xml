@@ -12,12 +12,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/primaryColor"
+        app:tabMode="scrollable"
         app:tabTextColor="@color/white"
         tools:stateListAnimator="@color/primaryColor" />
+
+    <Button
+        android:id="@+id/menu_tempText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/background_skip_login"
+        android:gravity="center"
+        android:text="Kya hai ee?"
+        android:textSize="42sp" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/menu_viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
