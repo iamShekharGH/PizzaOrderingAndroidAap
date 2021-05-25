@@ -7,14 +7,6 @@
     android:background="@color/fragmentBackground"
     tools:context=".ui.menu.FragmentMenu">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/menu_tablayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/primaryColor"
-        app:tabMode="scrollable"
-        app:tabTextColor="@color/white"
-        tools:stateListAnimator="@color/primaryColor" />
 
     <Button
         android:id="@+id/menu_tempText"
@@ -31,5 +23,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/menu_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:scrollbars="horizontal"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/white"
+        tools:stateListAnimator="@color/primaryColor" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

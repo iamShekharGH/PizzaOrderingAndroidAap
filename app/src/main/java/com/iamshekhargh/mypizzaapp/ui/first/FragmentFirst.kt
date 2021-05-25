@@ -22,6 +22,7 @@ class FragmentFirst : Fragment(R.layout.fragment_first) {
 
 
         setupEvents()
+        viewModel.listenToRepoEvents()
     }
 
     private fun setupEvents() {

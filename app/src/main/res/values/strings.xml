@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">My Pizza App</string>
     <string name="choose_language">CHOOSE LANGUAGE</string>
+    <string name="choose_language_hindi_text">अपनी भाषा चुनिए</string>
 </resources>

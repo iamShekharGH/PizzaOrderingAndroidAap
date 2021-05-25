@@ -26,18 +26,35 @@ class FragmentChooseLanguage : Fragment(R.layout.fragment_choose_language) {
         binding.apply {
             chooseLanguageLayoutEng.setOnClickListener {
                 setLocale("hi")
+                languageSelectedUIChanges(eng = true)
                 viewModel.englishLanguageLayoutClicked()
             }
 
             chooseLanguageLayoutHindi.setOnClickListener {
+                languageSelectedUIChanges(eng = false)
                 viewModel.hindiLanguageLayoutClicked()
             }
 
             chooseLangButton.setOnClickListener {
+                languageSelectedUIChanges(eng = true)
                 viewModel.englishLanguageLayoutClicked()
             }
         }
         setupEvents()
+    }
+
+    // Util Functions
+    private fun languageSelectedUIChanges(eng: Boolean) {
+        binding.apply {
+            if (eng) {
+                chooseLanguageRadioEng.isChecked = true
+                chooseLanguageRadioHin.isChecked = false
+
+            } else {
+                chooseLanguageRadioHin.isChecked = true
+                chooseLanguageRadioEng.isChecked = false
+            }
+        }
     }
 
     private fun setLocale(s: String) {

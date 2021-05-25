@@ -23,6 +23,10 @@ class FragmentLogin : Fragment(R.layout.fragment_login) {
 
         binding.apply {
 
+            loginFragmentSubmit.setOnClickListener {
+                viewModel.submitButtonClicked(loginFragmentPhoneNumber.text.toString())
+            }
+
             loginFragmentSkipLogin.setOnClickListener {
                 viewModel.loginSkipped()
             }

@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="8dp"
-            android:text="अपनी भाषा चुनिए"
+            android:text="@string/choose_language_hindi_text"
             android:textColor="@color/white"
             android:textSize="21sp"
             android:textStyle="bold" />
